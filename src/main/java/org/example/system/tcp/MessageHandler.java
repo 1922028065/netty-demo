@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class MessageHandler extends SimpleChannelInboundHandler<String> {
-    private final static Logger log  = LogManager.getLogger(TcpServer.class);
+    private final static Logger log  = LogManager.getLogger(MessageHandler.class);
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String s) throws Exception {
         log.debug("channelId: {} , 接受msg: {}",ctx.channel().id(),s);

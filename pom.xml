@@ -8,6 +8,11 @@
     <artifactId>demo-netty</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <!--netty 核心包-->
         <dependency>
@@ -48,6 +53,19 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.19</version>
             <scope>runtime</scope>
+        </dependency>
+        <!--coap核心包-->
+        <dependency>
+            <groupId>org.eclipse.californium</groupId>
+            <artifactId>californium-core</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <!--mdns协议-jmdns -->
+        <dependency>
+            <groupId>javax.jmdns</groupId>
+            <artifactId>jmdns</artifactId>
+            <version>3.4.1</version>
         </dependency>
 
 
